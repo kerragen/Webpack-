@@ -1,0 +1,139 @@
+.icon {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  &__exit {
+    display: flex;
+    background:url("../img/ic/exit.svg") center no-repeat;
+    width: 40px;
+    height: 40px;
+    background-color: $color-fuchsia;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: opacity 0.3s;
+      
+    }
+
+  &__search {
+    display: flex;
+    background:url("../img/ic/search.svg") center no-repeat;
+    width: 40px;
+    height: 40px;
+    background-color: $color-fuchsia;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: opacity 0.3s;
+      
+  }
+
+  &__call {
+    display: flex;
+    background:url("../img/ic/call.svg") center no-repeat;
+    width: 40px;
+    height: 40px;
+    background-color: $color-fuchsia;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: opacity 0.3s;
+      
+  }
+
+  &__chat {
+    display: flex;
+    background:url("../img/ic/chat.svg") center no-repeat;
+    width: 40px;
+    height: 40px;
+    background-color: $color-fuchsia;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: opacity 0.3s;
+      
+  }
+
+  &__profile {
+    display: flex;
+    background:url("../img/ic/profile.svg") center no-repeat;
+    width: 40px;
+    height: 40px;
+    background-color: $color-fuchsia;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: opacity 0.3s;
+  }
+
+  &__menu {
+    display: flex;
+    background:url("../img/ic/burger.svg") center no-repeat;
+    width: 40px;
+    height: 40px;
+    background-color: $color-fuchsia;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: opacity 0.3s;
+  }
+
+  &__repair {
+    display: flex;
+    background:url("../img/ic/repair.svg") center no-repeat;
+    width: 40px;
+    height: 40px;
+    background-color: $color-fuchsia;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: opacity 0.3s;
+      
+  }
+
+  &__checkstatus {
+    display: flex;
+    background:url("../img/ic/checkstatus.svg") center no-repeat;
+    width: 40px;
+    height: 40px;
+    background-color: $color-fuchsia;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: opacity 0.3s;
+      
+  }
+  
+  &__text {
+    font-weight: 500;
+    font-size: $font-size--link;
+    color: $text-color;
+    letter-spacing: -0.4px;
+    transition: color 0.3s;
+  
+    @media (min-width: $screen-mobile) {
+      display: none;
+    }
+  
+     @media (min-width: $screen-desktop) {
+      display: inline;
+    }
+  }
+  
+  &:hover {
+    .icon__exit,
+    .icon__search,
+    .icon__call,
+    .icon__chat,
+    .icon__profile,
+    .icon__menu,
+    .icon__repair,
+    .icon__checkstatus {
+      opacity: 0.7;
+    }
+  
+    .icon__text {
+      color: $color-fuchsia;
+    }
+  }
+}

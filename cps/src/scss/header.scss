@@ -1,0 +1,151 @@
+.header {
+    @media (min-width: $screen-desktop) {
+      display: flex;
+      align-items: flex-end;
+    }
+  
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      background-color: $color-white;
+      box-shadow: 0 1px 0 0 $color-stripe;
+      column-gap: 16px;
+  
+      @media (min-width: $screen-mobile) {
+        padding: 18.59px 16px;
+      }
+  
+      @media (min-width: $screen-tablet) {
+        padding: 18.59px 24px;
+      }
+  
+      @media (min-width: $screen-desktop) {
+        padding: 0;
+        order: 2;
+        background: 0;
+        box-shadow: none;
+        column-gap: 32px;
+        margin-right: 32px;
+      }
+  
+      &::before {
+        content: '';
+        height: 30px;
+        border: 1px solid $color-border;
+        border-radius: 1px;
+        position: absolute;
+        left: 84px;
+  
+        @media (min-width: $screen-mobile) {
+          display: none;
+        }
+  
+        @media (min-width: $screen-tablet) {
+          display: block;
+        }
+  
+        @media (min-width: $screen-desktop) {
+          display: none;
+        }
+      }
+  
+      &::after {
+        content: '';
+        height: 30px;
+        border: 1px solid #eaeaea;
+        border-radius: 1px;
+        position: absolute;
+  
+        @media (min-width: $screen-mobile) {
+          right: 132px;
+        }
+  
+        @media (min-width: $screen-tablet) {
+          right: 142px;
+        }
+  
+        @media (min-width: $screen-desktop) {
+          display: none;
+        }
+      }
+    }
+  
+    &__item {
+      &:first-child {
+        @media (min-width: $screen-tablet) {
+          margin-right: 26px;
+        }
+      }
+  
+      &:nth-last-child(2) {
+        @media (min-width: $screen-tablet) {
+          margin-left: 26px;
+        }
+      }
+  
+      &:nth-child(2) {
+        flex-grow: 1;
+      }
+  
+      &:nth-child(3),
+      &:nth-child(4),
+      &:nth-child(5) {
+        @media (min-width: $screen-mobile) {
+          display: none;
+        }
+  
+        @media (min-width: $screen-tablet) {
+          display: block;
+        }
+      }
+  
+      &:nth-child(-n + 5) {
+        @media (min-width: $screen-desktop) {
+          display: none;
+        }
+      }
+    }
+  
+    &__title {
+      margin: 0;
+      font-weight: 700;
+      font-size: $font-size--h1;
+      letter-spacing: -0.6px;
+      line-height: 40px;
+  
+      @media (min-width: $screen-mobile) {
+        padding-top: 24px;
+        margin-left: 16px;
+      }
+  
+      @media (min-width: $screen-tablet) {
+        margin-left: 24px;
+      }
+  
+      @media (min-width: $screen-desktop) {
+        padding-top: 42px;
+        margin-left: 32px;
+        position: relative;
+        flex-grow: 1;
+      }
+  
+      &::before {
+        content: '';
+        position: absolute;
+        height: 40px;
+        width: 4px;
+        background-color: #41f6d7;
+        border-radius: 0 15px 15px 0;
+  
+        @media (min-width: $screen-mobile) {
+          left: 0px;
+        }
+  
+        @media (min-width: $screen-desktop) {
+          left: -32px;
+        }
+      }
+    }
+  }

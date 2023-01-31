@@ -1,0 +1,54 @@
+.menu-footer {
+    &__content {
+      display: flex;
+      flex-direction: column;
+      padding: 0 24px 32px 24px;
+      margin-top: 24px;
+    }
+  
+    &__buttons {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+  
+    &__email {
+      font-size: $font-size--link;
+      font-weight: 500;
+      color: $text-color;
+      margin-bottom: 12px;
+    }
+  
+    &__phone {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -1px;
+      color: $text-color;
+      margin-bottom: 40px;
+    }
+  
+    &__email,
+    &__phone {
+      transition: color 0.3s;
+  
+      &:hover {
+        color: $color-fuchsia;
+      }
+    }
+  
+    &__lang-buttons {
+      display: flex;
+      gap: 7px;
+    }
+  
+    &__lang-button {
+      font-size: $font-size--link;
+      font-weight: 500;
+      color: $text-color;
+      transition: color 0.3s;
+  
+      &:hover {
+        color: $color-fuchsia;
+      }
+    }
+  }

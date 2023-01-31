@@ -1,17 +1,32 @@
-$bgColor: #24292e;
-$text: #fff;
+@import '~normalize.css';
 
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
+@import './fonts.scss';
+@import './variables.scss';
+@import './reset.scss';
+@import '../../node_modules/swiper/swiper-bundle.css';
 
-body {
-  padding: 1rem;
-  margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
-}
+@import './page.scss';
+@import './header.scss';
+@import './icon.scss';
+@import './logo.scss';
+@import './menu.scss';
+@import './section-block.scss';
+@import './gb-gradient.scss';
+@import './brands.scss';
+@import './slide-button.scss';
+@import './technics.scss';
+@import './services.scss';
+@import './send-button.scss';
+@import './footer.scss';
+@import './left-menu.scss';
+@import './container.scss';
+@import './menu-header.scss';
+@import './menu-nav.scss';
+@import './menu-footer.scss';
+@import './modal-call.scss';
+@import './modal-caption.scss';
+@import './modal-input.scss';
+@import './modal-agreement.scss';
+@import './modal-fb.scss';
+
+

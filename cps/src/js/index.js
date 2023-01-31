@@ -1,3 +1,9 @@
 import '../scss/style.scss'
 
-console.log('Works!')
+import './swipers'
+import './brands'
+import './section-block'
+import './modals'
+import './technics'
+
+

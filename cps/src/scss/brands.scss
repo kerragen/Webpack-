@@ -1,0 +1,212 @@
+.brands {
+    &__title {
+      padding: 16px;
+      border-top: 1px solid $color-stripe;
+      font-size: $font-size--link;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: $text-color--gray;
+      letter-spacing: -0, 2px;
+  
+      @media (min-width: $screen-tablet) {
+        padding-left: 24px;
+      }
+  
+      @media (min-width: $screen-desktop) {
+        padding-left: 32px;
+      }
+    }
+  
+    &__container {
+      @media (min-width: $screen-tablet) {
+        margin: 0 auto;
+        width: 768px;
+      }
+  
+      @media (min-width: $screen-desktop) {
+        margin: 0;
+        width: auto;
+      }
+    }
+  
+    &__swiper {
+      
+      @media (min-width: $screen-mobile) {
+        width: 100vw;
+        height: 140px;
+      }
+  
+      @media (min-width: $screen-tablet) {
+        display: flex;
+        width: auto;
+        height: auto;
+        margin: 0;
+        overflow: visible;
+      }
+    }
+  
+    &__wrapper {
+      @media (min-width: $screen-tablet) {
+        width: 768px;
+        margin: 24px;
+        flex-wrap: wrap;
+        gap: 16px 24px;
+        max-height: 250px;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+      }
+  
+      @media (min-width: $screen-desktop) {
+        width: auto;
+        gap: 16px 32px;
+        margin: 24px 32px;
+      }
+  
+      &--hidden {
+        @media (min-width: $screen-tablet) {
+          max-height: 160px;
+        }
+      }
+    }
+  
+    &__slide {
+      margin-top: 16px;
+      width: 240px;
+      height: 72px;
+  
+      @media (min-width: $screen-tablet) {
+        margin: 0;
+        width: auto;
+      }
+  
+      
+    }
+  
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: $color-white;
+      border: 1px solid $color-border;
+      border-radius: 6px;
+      height: 72px;
+      padding: 0 16px;
+      transition: border-color 0.3s;
+  
+      @media (min-width: $screen-mobile) {
+        width: 240px;
+      }
+  
+      @media (min-width: $screen-tablet) {
+        width: 224px;
+      }
+  
+      @media (min-width: $screen-desktop) {
+        width: 240px;
+      }
+  
+      &:hover {
+        border-color: $color-fuchsia;
+  
+        .slide-button {
+          transform: rotate(90deg);
+        }
+      }
+    }
+  
+    &__lenovo {
+      width: 108px;
+      height: 32px;
+    }
+  
+    &__samsung {
+      width: 116px;
+      height: 38.52px;
+    }
+  
+    &__apple {
+      width: 44px;
+      height: 44px;
+    }
+  
+    &__viewsonic {
+      width: 128px;
+      height: 21px;
+    }
+  
+    &__bosch {
+      width: 128px;
+      height: 28.6px;
+    }
+  
+    &__hp {
+      width: 52px;
+      height: 52px;
+    }
+  
+    &__acer {
+      width: 94px;
+      height: 24px;
+    }
+  
+    &__sony {
+      width: 128px;
+      height: 25.6px;
+    }
+  
+    &__image {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .swiper-pagination {
+      margin-bottom: 8px;
+    }
+  
+    .swiper-pagination-bullet {
+      width: 12px;
+      height: 12px;
+      margin: 6px;
+      background-color: $text-color--gray;
+    }
+  
+    &__button {
+      align-items: center;
+      font-size: $font-size--link;
+      font-weight: 500;
+      position: relative;
+      transition: color 0.3s;
+  
+      @media (min-width: $screen-mobile) {
+        display: none;
+      }
+  
+      @media (min-width: $screen-tablet) {
+        display: block;
+        margin-left: 57px;
+      }
+  
+      @media (min-width: $screen-desktop) {
+        margin-left: 63px;
+      }
+  
+      &:hover {
+        color: $color-fuchsia;
+      }
+  
+      &::before {
+        content: url('../img/ic/expand.svg');
+        left: -24px;
+        position: absolute;
+        transform: rotate(0);
+        transition: transform 0.3s;
+      }
+  
+      &--open {
+        &::before {
+          transform: rotate(180deg);
+          transition: transform 0.3s;
+        }
+      }
+    }
+  }
