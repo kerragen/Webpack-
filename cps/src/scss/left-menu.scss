@@ -6,6 +6,8 @@
       position: fixed;
       z-index: 2;
     }
+
+    
   
     @media (min-width: $screen-desktop) {
       transform: none;
@@ -20,7 +22,7 @@
     }
   
     &--open {
-      @media (min-width: $screen-tablet) {
+      @media (min-width: $screen-mobile) {
         .left-menu__fog {
           position: fixed;
           width: 100vw;
@@ -30,9 +32,13 @@
           opacity: 0.9;
         }
       }
-  
+
       .left-menu__container {
         left: 0;
+
+        @media(max-width:$screen-mobile-modal){
+          width: 100%
+        }
       }
     }
   
@@ -60,8 +66,9 @@
     scrollbar-width: none;
   
     @media (min-width: $screen-mobile) {
-      width: 100vw;
+      width: 360px;
       height: 100vh;
+      box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
     }
   
     @media (min-width: $screen-tablet) {

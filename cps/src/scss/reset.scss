@@ -11,7 +11,11 @@ body {
     background-color:$color-bg;
     height: 100%;
 }
-  
+
+.opened{
+    overflow:hidden; 
+}
+
 button {
     cursor: pointer;
     font-family: inherit;
